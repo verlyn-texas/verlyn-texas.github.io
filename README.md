@@ -8,12 +8,13 @@ Plain HTML, one stylesheet (`assets/style.css`) and a small menu script (`assets
 
 - `index.html`: the home page and list of projects.
 - `ai-policy/`: *The Pill and the Dish* project page, with the report, essay and summary deck as PDFs.
+- `entangled-pairs/`: the physics preprint *A label-coordinate bookkeeping for entangled pairs* (PDF) with links to its verification code. Its card image, `assets/entangled-pairs-frames.jpg`, is the paper's Figure 1.
 - `404.html`: shown for unknown addresses.
 
 ## Adding a project
 
 1. Create a folder named for the project (for example `physics/`) with an `index.html` copied from `ai-policy/index.html`.
-2. Add a `work` card to the Selected Works grid in `index.html` (only the first card should carry `featured`), and a link under "Selected works" in the menu on every page.
+2. Add a `work` card to the Selected Works grid in `index.html` (cards marked `featured` span the full width with the image beside the text), and a link under "Selected works" in the menu on every page.
 3. Link each document to its Zenodo DOI. The DOI record is the canonical copy; the PDF here is a convenience copy.
 
 ## License

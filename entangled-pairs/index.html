@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entangled Pairs: What Co-location Can and Cannot Explain</title>
+  <meta name="description" content="Can entangled particles be given coordinates in which they never separate? A physics preprint by Verlyn Fischer, with released verification code.">
+  <link rel="canonical" href="https://verlynfischer.com/entangled-pairs/">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script src="../assets/menu.js" defer></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="A label-coordinate bookkeeping for entangled pairs: what co-location can and cannot explain">
+  <meta property="og:description" content="Entangled particles can be given coordinates in which they never separate. This preprint proves what that does and does not explain.">
+  <meta property="og:url" content="https://verlynfischer.com/entangled-pairs/">
+  <meta property="og:image" content="https://verlynfischer.com/assets/entangled-pairs-frames.jpg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="../index.html"><img src="../favicon.svg" alt="">Explorations</a>
+      <details class="menu">
+        <summary>Menu <svg class="chev" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+        <nav class="menu-panel" aria-label="Site">
+          <a href="../index.html">Home</a>
+          <p class="menu-label">Selected works</p>
+          <a href="../ai-policy/">The Pill and the Dish<span class="sub">AI policy · report, essay and slides</span></a>
+          <a href="index.html" aria-current="page">What Co-location Can and Cannot Explain<span class="sub">Physics · preprint and verification code</span></a>
+          <hr>
+          <a href="https://orcid.org/0009-0001-3959-8877">ORCID profile<span class="sub">0009-0001-3959-8877</span></a>
+        </nav>
+      </details>
+    </div>
+  </header>
+
+  <section class="hero compact on-navy" aria-labelledby="hero-title">
+    <img class="art" src="../assets/hero-art.svg" alt="">
+    <div class="wrap">
+      <div class="hero-text">
+        <p class="eyebrow">Physics · Quantum foundations · 2026</p>
+        <h1 id="hero-title">What Co-location Can and Cannot Explain</h1>
+        <p class="lede">Two entangled particles that fly apart in the laboratory can be given coordinates in which they never separate. This paper asks how much that explains, and proves exactly where it stops.</p>
+        <div class="actions">
+          <a class="btn primary" href="#read">Read the paper</a>
+          <a class="btn" href="#cite">How to cite</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="wrap narrow">
+    <section class="section">
+    <p>When one particle of an entangled pair is measured, the joint state of the pair changes at once, however far apart the particles are. In the laboratory's description that update is non-local. The paper formalizes a conjecture about it: that the non-locality belongs to the laboratory's description, not to the particles. Each particle gets one extra coordinate, a label. In coordinates adapted to the pair, the two partners sit at the same place while they are entangled, so the update at measurement happens at a single point and in a definite order.</p>
+    </section>
+
+    <section class="section">
+    <h2>Key results</h2>
+    <ol class="findings">
+      <li><strong>The central result is negative and exact.</strong> A rule acting where the partners meet could produce correlations stronger than quantum mechanics allows. So co-location explains neither the strength of quantum correlations nor the impossibility of signaling. Both have to be imported from quantum mechanics.</li>
+      <li><strong>What it does deliver is a place and an order.</strong> The construction moves the puzzle of entanglement rather than removing it. It makes progress on the <em>distance</em> in "spooky action at a distance", not on the <em>action</em>.</li>
+      <li><strong>It agrees with quantum mechanics.</strong> The mechanism is stated in four postulates and proved empirically equivalent to the nonrelativistic quantum mechanics of distinguishable massive particles, for spin measurements that do not couple spin to position.</li>
+      <li><strong>A relativistic version orders the measurements invariantly.</strong> In 1 + 1 dimensions, a pair's measurements get a strict Lorentz-invariant partial order carried by the events themselves.</li>
+      <li><strong>The claim is validity, not correctness.</strong> The account reproduces established results without contradiction. Its only empirical rivals are dynamical-collapse models, and it predicts zero collapse noise, as every no-collapse account does.</li>
+    </ol>
+    </section>
+
+    <section class="section" id="read">
+    <h2>Read</h2>
+    <p class="small">Every numerical claim in the paper is backed by a unit test in the released code.</p>
+    <div class="docs">
+      <article class="doc">
+        <div class="type">Preprint</div>
+        <h3>A label-coordinate bookkeeping for entangled pairs: what co-location can and cannot explain</h3>
+        <p class="meta">30 pages · 3 figures · 5 tables · PDF, 1.4 MB</p>
+        <p>The full paper: the frame construction, the contact-rule test, many-particle states and entanglement swapping, the relativistic variant, and the comparison with dynamical collapse.</p>
+        <div class="actions">
+          <a class="btn primary" href="label-coordinate-bookkeeping-entangled-pairs.pdf">Read the paper (PDF)</a>
+          <a class="btn" href="https://doi.org/10.5281/zenodo.23249337">doi:10.5281/zenodo.23249337</a>
+        </div>
+      </article>
+
+      <article class="doc">
+        <div class="type">Verification code</div>
+        <h3>Python package and test suite</h3>
+        <p class="meta">Python / NumPy · 198 tests · MIT license · release v1.2.2</p>
+        <p>The frame maps, the locality-graph rules, the covariant variant and its ordering rule, and the numerical checks behind each proposition. Each numbered claim in the paper has a matching test.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://github.com/verlyn-texas/entanglement_as_locality_verification_code">View on GitHub</a>
+          <a class="btn" href="https://doi.org/10.5281/zenodo.22820042">doi:10.5281/zenodo.22820042</a>
+        </div>
+      </article>
+    </div>
+    </section>
+
+    <section class="section" id="cite">
+    <h2>How to cite</h2>
+    <p class="cite">Fischer, V. (2026). <em>A label-coordinate bookkeeping for entangled pairs: What co-location can and cannot explain</em> [Preprint]. Zenodo. <a href="https://doi.org/10.5281/zenodo.23249337">https://doi.org/10.5281/zenodo.23249337</a></p>
+    <details class="bib">
+      <summary>BibTeX</summary>
+<pre>@misc{fischer2026labelcoordinate,
+  author    = {Fischer, Verlyn},
+  title     = {A label-coordinate bookkeeping for entangled
+               pairs: what co-location can and cannot explain},
+  year      = {2026},
+  publisher = {Zenodo},
+  note      = {Preprint},
+  doi       = {10.5281/zenodo.23249337},
+  url       = {https://doi.org/10.5281/zenodo.23249337}
+}
+
+@software{fischer2026labelcoordinatecode,
+  author    = {Fischer, Verlyn},
+  title     = {Verification code for "A label-coordinate
+               bookkeeping for entangled pairs"},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {v1.2.2},
+  doi       = {10.5281/zenodo.22820042},
+  url       = {https://doi.org/10.5281/zenodo.22820042}
+}</pre>
+    </details>
+
+    <p class="small">The paper is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and the code under the MIT license.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Verlyn Fischer · Documents licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+      <p><a href="https://orcid.org/0009-0001-3959-8877">ORCID 0009-0001-3959-8877</a></p>
+    </div>
+  </footer>
+</body>
+</html>

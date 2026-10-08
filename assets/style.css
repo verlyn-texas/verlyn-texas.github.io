@@ -193,6 +193,8 @@ p { margin: 0.9rem 0; }
 .work:hover { transform: translateY(-3px); }
 .work .thumb { aspect-ratio: 16 / 9; background: var(--surface-2); }
 .work .thumb img { width: 100%; height: 100%; object-fit: cover; }
+.work .thumb.figure { background: #ffffff; display: flex; align-items: center; }   /* charts: never crop */
+.work .thumb.figure img { object-fit: contain; height: auto; }
 .work .body { padding: 1.25rem 1.35rem 1.4rem; display: flex; flex-direction: column; gap: 0.5rem; flex: 1; }
 .tag {
   align-self: flex-start; font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em;
